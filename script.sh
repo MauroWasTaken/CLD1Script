@@ -1,5 +1,4 @@
 #!/bin/bash
-set -x
 set -e
 if [ -z "$1" ];
 then
@@ -9,7 +8,7 @@ else
     echo "has username"
     name=$1
 fi
-read -r -p "password pls: " password
+read -r -p "Please enter the user's password: " password
 if [ -z "$password" ];
 then
     echo "you're missing the password"
