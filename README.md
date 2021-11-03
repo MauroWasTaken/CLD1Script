@@ -90,7 +90,7 @@ type this two commands to install and start PHP and PHP FPM
 
 ## Changing the default state for a new user
 in order to create a new user, you have to ways of proceeding.
-## Using the script
+### Using the script
 To download the script you'll need to install git on your machine
 ```shell
 # apt install git
@@ -102,8 +102,8 @@ Finally to start up the script type the following command
 ```
 You'll be prompted twice during the script, the first one asking for the user's password and the second one asking the root password for MariaDB - the one chosen during the secure installation
 
-## Adding the user manually
-
+### Adding the user manually
+If you have done the installation using the script, you cant skip until the ** "finishing touches" **
 ```shell
 # mkdir /etc/skel/html
 # echo "<?php phpinfo();" | tee -a /etc/skel/html/index.php > /dev/null
@@ -129,7 +129,6 @@ CREATE_MAIL_SPOOL=no
 Before creating the user, we are going to secure the /home directory in order to stop the user from accessing the other websites.
 ```shell
 # chmod 751 /home
-
 ```
 
 ## Create a new web user

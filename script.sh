@@ -5,7 +5,6 @@ then
     echo "you're missing the Username"
     exit 1
 else
-    echo "has username"
     name=$1
 fi
 read -r -p "Please enter the user's password: " password
@@ -13,9 +12,6 @@ if [ -z "$password" ];
 then
     echo "you're missing the password"
     exit 1
-else
-    echo "has password"
-    
 fi
 export PATH="$PATH:/sbin:/usr/sbin:usr/local/sbin"
 ##Create a new web user
