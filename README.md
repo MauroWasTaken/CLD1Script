@@ -103,7 +103,7 @@ Finally to start up the script type the following command
 You'll be prompted twice during the script, the first one asking for the user's password and the second one asking the root password for MariaDB - the one chosen during the secure installation
 
 ### Adding the user manually
-If you have done the installation using the script, you cant skip until the ** "finishing touches" **
+If you have done the installation using the script, you cant skip until the **finishing touches**
 ```shell
 # mkdir /etc/skel/html
 # echo "<?php phpinfo();" | tee -a /etc/skel/html/index.php > /dev/null
